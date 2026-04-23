@@ -1,0 +1,32 @@
+{
+  "name": "trainshop-api",
+  "version": "1.0.0",
+  "description": "TrainShop API — catalogue produits avec cache Redis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "docker",
+    "training",
+    "express",
+    "postgresql",
+    "redis"
+  ],
+  "author": "MD Consulting Digital",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.11.3",
+    "redis": "^4.6.13",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

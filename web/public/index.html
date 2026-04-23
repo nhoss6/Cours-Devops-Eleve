@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrainShop — Catalogue Produits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">TrainShop</h1>
+      <p class="tagline">Catalogue produits • Démo Docker</p>
+    </div>
+  </header>
+
+  <!-- Barre de statut des services -->
+  <div class="status-bar">
+    <div class="container">
+      <div class="status-items">
+        <div class="status-item">
+          <span class="status-badge" id="status-web">●</span>
+          <span>Frontend</span>
+        </div>
+        <div class="status-item">
+          <span class="status-badge" id="status-api">●</span>
+          <span>API</span>
+        </div>
+        <div class="status-item">
+          <span class="status-badge" id="status-db">●</span>
+          <span>Database</span>
+        </div>
+        <div class="status-item">
+          <span class="status-badge" id="status-cache">●</span>
+          <span>Cache</span>
+        </div>
+      </div>
+      <div id="status-text" class="status-text">Chargement...</div>
+    </div>
+  </div>
+
+  <!-- Section principale : catalogue -->
+  <main class="container">
+    <section class="products-section">
+      <h2>Nos Produits</h2>
+      <div class="stats">
+        <p>Total : <span id="product-count">0</span> produits</p>
+        <p>Cache : <span id="cache-info">-</span></p>
+      </div>
+      <div id="products" class="products-grid">
+        <p class="loading">Chargement des produits...</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <p>&copy; 2024 MD Consulting Digital • <a href="#">Contacter</a> • <a href="#">À propos</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
